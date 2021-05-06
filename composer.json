@@ -1,0 +1,30 @@
+{
+  "name": "arillo/silverstripe-fluent-misdirection",
+  "description": "Elements",
+  "type": "silverstripe-vendormodule",
+  "homepage": "https://github.com/arillo/silverstripe-elements",
+  "keywords": ["silverstripe", "fluent", "misdirection"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sebastian Fischer",
+      "email": "sf@arillo.ch"
+    }
+  ],
+  "require": {
+    "silverstripe/framework": "^4",
+    "nglasl/silverstripe-misdirection": "^3.1",
+    "tractorcow/silverstripe-fluent": "^5"
+  },
+  "extra": {
+    "installer-name": "fluent-misdirection"
+  },
+  "autoload": {
+    "psr-4": {
+      "Arillo\\Misdirection\\": "src/"
+    }
+  },
+  "support": {
+    "issues": "https://github.com/arillo/silverstripe-fluent-misdirection/issues"
+  }
+}
