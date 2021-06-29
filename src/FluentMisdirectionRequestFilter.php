@@ -123,6 +123,7 @@ class FluentMisdirectionRequestFilter implements RequestFilter
 
         if (
             ($error || $enforce || $replace) &&
+            $this->service &&
             ($map = $this->service->getMappingByRequest($request))
         ) {
             // Update the response code where appropriate.
@@ -160,6 +161,7 @@ class FluentMisdirectionRequestFilter implements RequestFilter
         // Determine a page not found fallback, when the CMS module is present.
         elseif (
             $error &&
+            $this->service &&
             ($fallback = $this->service->determineFallback($requestURL))
         ) {
             // Update the response code where appropriate.
